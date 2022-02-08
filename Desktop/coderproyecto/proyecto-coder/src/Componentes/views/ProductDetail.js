@@ -24,7 +24,7 @@ const ProductDetail = () => {
 		<div className='CharacterList-detail'>
 			{users.map((use) => {
 				return (
-					<div key={use.use_id}>
+					<div key={use.id}>
 						<CardComponent data={use} />
 					</div>
 				);

@@ -20,24 +20,22 @@ useEffect(() => {
 
 useEffect(() => {
   axios(
-    `https://fakestoreapi.com/products`
-  ).then((res) => setUsers(res.data));
+    `https://fakestoreapi.com/products`).then((res) => 
+      setUsers(res.data));
   setTimeout(() => {
     setIsLoading(false);
   }, 2000);
 }, []);
 
-console.log(users);
-
 return (
   <div className='productList'>
-    {users.map((user) => {
+    {users.map((use) => {
       return (
-        <div key={user.id}>
+        <div key={use.id}>
           
             {isLoading ? <Spinner /> :
-              <Link to={`/detail/${user.user_id}`} className=''>
-                <CardComponent data={user} key={user.id} />
+              <Link to={`/detail/${use.id}`} className=''>
+                <CardComponent data={use}/>
                 </Link>}
           
         </div>
