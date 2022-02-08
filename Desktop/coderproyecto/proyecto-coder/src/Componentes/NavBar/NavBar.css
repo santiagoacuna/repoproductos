@@ -1,0 +1,21 @@
+
+.Nav{
+    display: flex;
+    background-color: gray;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 50px;
+    font-size: larger;
+    font-weight: bold;   
+  }
+.ulList {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    }
+
+.Link{
+    text-decoration: none;
+    color: white;
+}
