@@ -10,14 +10,6 @@ const ProductsComponent = () => {
 const [users, setUsers] = useState([]);
 const [isLoading, setIsLoading] = useState(true);
 
-/* Sin Axios */
-/*  
-useEffect(() => {
-  fetch('https://fakestoreapi.com/products'),+
-    .then((response) => response.json())
-    .then((json) => setUsers(json));
-}, []);*/
-
 useEffect(() => {
   axios(
     `https://fakestoreapi.com/products`).then((res) => 
